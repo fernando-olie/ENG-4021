@@ -1,0 +1,174 @@
+/* Reset básico e corpo */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #f5f5f5;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #6f00ff, #9e00ff);
+  padding: 20px 40px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #9e00ff;
+}
+
+header input {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  width: 250px;
+  max-width: 100%;
+  font-size: 16px;
+}
+
+.actions button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: white;
+  color: #6f00ff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.actions button:hover {
+  background-color: #dcd3ff;
+}
+
+/* Hero */
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  background: #6f00ff;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Seção Artistas */
+.artistas {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.artistas h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  text-align: center;
+  color: #6f00ff;
+}
+
+.grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+/* Seção Gêneros */
+.generos {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.generos h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #6f00ff;
+}
+
+.tags button {
+  margin: 5px 10px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 20px;
+  background-color: #e3d8ff;
+  color: #6f00ff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tags button:hover {
+  background-color: #c5b1ff;
+}
+
+/* Footer */
+footer {
+  padding: 30px 20px;
+  text-align: center;
+  background: #6f00ff;
+}
+
+footer .continuar {
+  background-color: white;
+  color: #6f00ff;
+  border: none;
+  padding: 15px 40px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+footer .continuar:hover {
+  background-color: #dcd3ff;
+}
