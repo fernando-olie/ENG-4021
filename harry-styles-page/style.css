@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f4f1fa;
+    color: #333;
+}
+
+/* NAVBAR */
+header {
+    background: linear-gradient(90deg, #3b0ca3, #5b2ee0);
+    padding: 1rem 2rem;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: white;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.logo span {
+    color: #f1c40f;
+}
+
+.nav input {
+    width: 40%;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    background: #7a4fff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background: #5e2cd7;
+    transform: translateY(-2px);
+}
+
+.btn.login {
+    background: white;
+    color: #5e2cd7;
+}
+
+/* BANNER */
+.banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    filter: brightness(70%) contrast(110%);
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.banner-text h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.banner-text p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    max-width: 400px;
+}
+
+.actions {
+    display: flex;
+    gap: 15px;
+}
+
+/* SECTIONS */
+.section {
+    padding: 2.5rem 2rem;
+}
+
+.section h2 {
+    color: #4b1fd1;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 1rem;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.card p {
+    padding: 0 1rem 1rem;
+    color: #666;
+}
+
+/* BIO */
+.bio p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    max-width: 800px;
+}
+
+/* GALLERY */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    filter: brightness(90%);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    background: #3b0ca3;
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+}

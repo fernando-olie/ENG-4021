@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Styles | SHOWtime</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <h1 class="logo">SHOW<span>time</span></h1>
+            <input type="text" placeholder="Pesquisar artista, evento...">
+            <div class="nav-buttons">
+                <button class="btn">Favoritos</button>
+                <button class="btn login">Login</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <img src="imagens/harry-banner.jpg" alt="Harry Styles banner">
+        <div class="banner-text">
+            <h2>Harry Styles</h2>
+            <p>Love on Tour e muito mais. Música, energia e autenticidade em cada palco.</p>
+            <div class="actions">
+                <button class="btn follow" id="followBtn">Seguir</button>
+                <button class="btn">Comprar Ingressos</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section upcoming">
+        <h2>Próximos Shows</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="imagens/harry-sp.jpg" alt="Show São Paulo">
+                <h3>São Paulo - Allianz Parque</h3>
+                <p>15 de Março de 2026</p>
+                <button class="btn">Ver Detalhes</button>
+            </div>
+            <div class="card">
+                <img src="imagens/harry-rj.jpg" alt="Show Rio de Janeiro">
+                <h3>Rio de Janeiro - Engenhão</h3>
+                <p>20 de Março de 2026</p>
+                <button class="btn">Ver Detalhes</button>
+            </div>
+            <div class="card">
+                <img src="imagens/harry-ba.jpg" alt="Show Buenos Aires">
+                <h3>Buenos Aires - River Plate</h3>
+                <p>25 de Março de 2026</p>
+                <button class="btn">Ver Detalhes</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bio">
+        <h2>Sobre o Artista</h2>
+        <p>Harry Styles é um cantor e compositor britânico conhecido por sua carreira solo e passagem pela banda One Direction. Seu som combina pop, rock e soul, com letras que exploram liberdade, amor e autoconhecimento.</p>
+        <p>Além da música, Harry é reconhecido por seu estilo marcante e por desafiar padrões de gênero na moda e na arte.</p>
+    </section>
+
+    <section class="section gallery">
+        <h2>Galeria</h2>
+        <div class="gallery-grid">
+            <img src="imagens/harry1.jpg" alt="Harry Styles ao vivo">
+            <img src="imagens/harry2.jpg" alt="Harry Styles no palco">
+            <img src="imagens/harry3.jpg" alt="Harry Styles sessão de fotos">
+            <img src="imagens/harry4.jpg" alt="Harry Styles Love on Tour">
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 SHOWtime | Página de artista inspirada no modelo de eventos</p>
+    </footer>
+
+    <script>
+        const followBtn = document.getElementById("followBtn");
+        let followed = false;
+
+        followBtn.addEventListener("click", () => {
+            followed = !followed;
+            followBtn.textContent = followed ? "Seguindo" : "Seguir";
+            followBtn.style.background = followed ? "#32cd32" : "#7a4fff";
+            localStorage.setItem("harryFollowed", followed);
+        });
+
+        window.addEventListener("load", () => {
+            const saved = localStorage.getItem("harryFollowed") === "true";
+            if (saved) {
+                followed = true;
+                followBtn.textContent = "Seguindo";
+                followBtn.style.background = "#32cd32";
+            }
+        });
+    </script>
+</body>
+</html>
